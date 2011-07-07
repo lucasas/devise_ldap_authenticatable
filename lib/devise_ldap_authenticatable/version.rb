@@ -1,4 +1,4 @@
 module DeviseLdapAuthenticatable
-  VERSION = "0.4.7"
+  VERSION = "0.4.9"
 end
 
