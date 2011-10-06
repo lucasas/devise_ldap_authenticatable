@@ -160,14 +160,14 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<devise>, ["= 1.1.7"])
-      s.add_runtime_dependency(%q<net-ldap>, ["= 0.2.2"])
+      s.add_runtime_dependency(%q<net-ldap>, ["= 0.2.3.r7"])
     else
       s.add_dependency(%q<devise>, ["= 1.1.7"])
-      s.add_dependency(%q<net-ldap>, ["= 0.2.2"])
+      s.add_dependency(%q<net-ldap>, ["= 0.2.3.r7"])
     end
   else
     s.add_dependency(%q<devise>, ["= 1.1.7"])
-    s.add_dependency(%q<net-ldap>, ["= 0.2.2"])
+    s.add_dependency(%q<net-ldap>, ["= 0.2.3.r7"])
   end
 end
 
