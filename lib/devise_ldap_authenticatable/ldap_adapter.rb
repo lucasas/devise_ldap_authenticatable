@@ -114,7 +114,7 @@ module Devise
             group_name = group
           end
           admin_ldap.search(:base => group_name, :scope => Net::LDAP::SearchScope_BaseObject) do |entry|
-            unless entry[group_attribute].include? dn
+            unless entry[group_attribute].include? @login
               DeviseLdapAuthenticatable::Logger.send("User #{dn} is not in group: #{group_name }")
               return false
             end
