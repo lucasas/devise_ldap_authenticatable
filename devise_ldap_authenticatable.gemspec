@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{devise_ldap_authenticatable}
-  s.version = "0.4.11.r7"
+  s.version = "0.4.11.prost"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Curtis Schiewek", "Daniel McNevin"]
@@ -159,15 +159,15 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<devise>, ["= 1.1.7"])
-      s.add_runtime_dependency(%q<net-ldap>, ["= 0.2.3.r7"])
+      s.add_runtime_dependency(%q<devise>, ["= 1.3.4"])
+      s.add_runtime_dependency(%q<net-ldap>, ["= 0.2.3.prost"])
     else
-      s.add_dependency(%q<devise>, ["= 1.1.7"])
-      s.add_dependency(%q<net-ldap>, ["= 0.2.3.r7"])
+      s.add_dependency(%q<devise>, ["= 1.3.4"])
+      s.add_dependency(%q<net-ldap>, ["= 0.2.3.prost"])
     end
   else
-    s.add_dependency(%q<devise>, ["= 1.1.7"])
-    s.add_dependency(%q<net-ldap>, ["= 0.2.3.r7"])
+    s.add_dependency(%q<devise>, ["= 1.3.4"])
+    s.add_dependency(%q<net-ldap>, ["= 0.2.3.prost"])
   end
 end
 
